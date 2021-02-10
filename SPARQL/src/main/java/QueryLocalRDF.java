@@ -17,6 +17,13 @@ public class QueryLocalRDF {
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
 
+        String q2_1 =
+                "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
+                        + "PREFIX mov: <http://www.lirmm.fr/ulliana/movies#> "
+                        + "SELECT * "
+                        + "WHERE {?s ?p ?o}";
+
+
         String q2_2 =
 
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
@@ -27,6 +34,11 @@ public class QueryLocalRDF {
                         + "  UNION { ?movies mov:directedBy ?x . }"
                         + "  UNION { ?x mov:playsIn ?movies . }}";
 
+        String q2_3 =
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> "
+                        + "PREFIX mov: <http://www.lirmm.fr/ulliana/movies#> "
+                        + "SELECT ?s "
+                        + "WHERE {?s rdfs:subClassOf mov:Artist}";
 
         /**
          *
@@ -51,7 +63,7 @@ public class QueryLocalRDF {
          */
 
 
-        Query query = QueryFactory.create(q2_2);
+        Query query = QueryFactory.create(q2_3);
 
 
         QueryExecution qexec = QueryExecutionFactory.create(query, model);

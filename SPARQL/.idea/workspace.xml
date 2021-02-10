@@ -4,25 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d6d9b28-7823-4546-b424-f71a1869b84b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../GraphRDFClass.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies.ttl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MoviesRDF.rdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/QueryLocalRDF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/QueryRemoteRDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_jena_jena_arq_3_17_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPARQL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SPARQL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Movie.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QueryLocalRDF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QueryRemoteRDF.java" beforeDir="false" />
+    <list default="true" id="6d6d9b28-7823-4546-b424-f71a1869b84b" name="Default Changelist" comment="Test Query 2_2 OK">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QueryLocalRDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueryLocalRDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/QueryLocalRDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QueryLocalRDF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/.idea/TP21.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/.idea/workspace-DESKTOP-7FUCP2B.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/TP21.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/pom-DESKTOP-7FUCP2B.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/src/main/java/QueryLocalRDF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TP21/src/main/java/QueryRemoteRDF.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +86,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612969123449</updated>
-      <workItem from="1612969131627" duration="1022000" />
+      <workItem from="1612969131627" duration="1683000" />
     </task>
+    <task id="LOCAL-00001" summary="Test Query 2_2 OK">
+      <created>1612970213304</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612970213307</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Test Query 2_2 OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Query 2_2 OK" />
   </component>
 </project>

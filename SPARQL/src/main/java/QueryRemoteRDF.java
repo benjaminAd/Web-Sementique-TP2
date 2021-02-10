@@ -1,17 +1,17 @@
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 
-import com.hp.hpl.jena.query.Query;
+/*import com.hp.hpl.jena.query.Query;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.query.ResultSetFormatter;
+import com.hp.hpl.jena.query.ResultSetFormatter;*/
 
 public class QueryRemoteRDF {
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
-
+/*
         String queryMailOfTimsFriends =
 
                 "PREFIX foaf:  <http://xmlns.com/foaf/0.1/> "
@@ -45,28 +45,28 @@ public class QueryRemoteRDF {
                         + " ?channel rdf:type rss:channel ." + " ?channel rss:items ?itemset ."
                         + " ?itemset ?sequenceNumber ?item ." + " ?item rdf:type ?type ." + "} ";
 
-        /**
+        *//**
          * 
          * Notice that we do not set a database - this is a class for querying a remote
          * dataset (via HTTP).
          * 
-         */
+         *//*
 
-        /**
+        *//**
          * 
          * Create a query object
          * 
-         */
+         *//*
 
         Query query = QueryFactory.create(ListRSSFeedClasses);
 
         QueryExecution qexec = QueryExecutionFactory.create(query);
 
-        /**
+        *//**
          * 
          * Execute Query and print result
          * 
-         */
+         *//*
 
         try {
 
@@ -77,7 +77,7 @@ public class QueryRemoteRDF {
         } finally {
 
             qexec.close();
-        }
+        }*/
 
     }
 }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:ns0="http://www.lirmm.fr/ulliana/movies#">
+
+  <rdf:Description rdf:about="http://www.lirmm.fr/ulliana/movies#directedBy">
+    <rdfs:domain rdf:resource="http://www.lirmm.fr/ulliana/movies#Movie"/>
+    <rdfs:range>
+      <rdf:Description rdf:about="http://www.lirmm.fr/ulliana/movies#Director">
+        <rdfs:subClassOf rdf:resource="http://www.lirmm.fr/ulliana/movies#Artist"/>
+      </rdf:Description>
+    </rdfs:range>
+
+  </rdf:Description>
+
+  <owl:DataTypeProperty rdf:about="http://www.lirmm.fr/ulliana/movies#title">
+    <rdfs:domain rdf:resource="http://www.lirmm.fr/ulliana/movies#Movie"/>
+  </owl:DataTypeProperty>
+
+  <rdf:Description rdf:about="http://www.lirmm.fr/ulliana/movies#playsIn">
+    <rdfs:domain>
+      <rdf:Description rdf:about="http://www.lirmm.fr/ulliana/movies#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.lirmm.fr/ulliana/movies#Artist"/>
+      </rdf:Description>
+    </rdfs:domain>
+
+    <rdfs:range rdf:resource="http://www.lirmm.fr/ulliana/movies#Movie"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.lirmm.fr/ulliana/movies#m2">
+    <ns0:title>Vertigo</ns0:title>
+  </rdf:Description>
+
+  <ns0:Movie rdf:about="http://www.lirmm.fr/ulliana/movies#m1">
+  </ns0:Movie>
+
+  <rdf:Description rdf:about="http://www.lirmm.fr/ulliana/movies#m3">
+    <ns0:directedBy rdf:resource="http://dbpedia.org/Alfred_Hitchcock"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.lirmm.fr/ulliana/movies#a1">
+    <ns0:playsIn rdf:resource="http://www.lirmm.fr/ulliana/movies#m4"/>
+  </rdf:Description>
+
+</rdf:RDF>

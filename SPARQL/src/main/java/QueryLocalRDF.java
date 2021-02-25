@@ -20,8 +20,8 @@ public class QueryLocalRDF {
         String q2_1 =
                 "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> "
                         + "PREFIX mov: <http://www.lirmm.fr/ulliana/movies#> "
-                        + "SELECT * "
-                        + "WHERE {?s ?p ?o}";
+                        + "SELECT ?s "
+                        + "WHERE {?s rdf:type mov:Movie}";
 
 
         String q2_2 =
@@ -50,7 +50,7 @@ public class QueryLocalRDF {
         Model model = ModelFactory.createDefaultModel();
 
         //Remplacer par le chemin correspondant
-        String dataset = "C:\\Users\\adolp\\OneDrive\\Bureau\\Fac\\Master\\M1\\S2\\Web-Sémentique\\Tp\\TP2\\Movies.ttl";
+        String dataset = "C:\\Users\\adolp\\OneDrive\\Bureau\\Fac\\Master\\M1\\S2\\Web-Sémantique\\Tp\\TP2\\Movies.ttl";
 
         InputStream in = FileManager.get().open(dataset);
 
@@ -63,7 +63,7 @@ public class QueryLocalRDF {
          */
 
 
-        Query query = QueryFactory.create(q2_3);
+        Query query = QueryFactory.create(q2_1);
 
 
         QueryExecution qexec = QueryExecutionFactory.create(query, model);

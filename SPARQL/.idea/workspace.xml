@@ -4,22 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d6d9b28-7823-4546-b424-f71a1869b84b" name="Default Changelist" comment="Test Query 2_2 OK">
+    <list default="true" id="6d6d9b28-7823-4546-b424-f71a1869b84b" name="Default Changelist" comment="Ajout Query 2_1 et 2_3">
+      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/Rapport.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rapport/auxil/Rapport.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rapport/auxil/Rapport.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rapport/auxil/Rapport.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/SPARQL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Text.ttl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Movies.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Text.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies.ttl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/QueryLocalRDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueryLocalRDF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/QueryLocalRDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QueryLocalRDF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/.idea/TP21.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/.idea/workspace-DESKTOP-7FUCP2B.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/TP21.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/pom-DESKTOP-7FUCP2B.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/src/main/java/QueryLocalRDF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP21/src/main/java/QueryRemoteRDF.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +33,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -53,7 +63,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../1ere annee/Semestre 2/TER/entrainement/AccessDataLast" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.QueryLocalRDF">
+    <configuration name="Movies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Movies" />
+      <module name="SPARQL" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QueryLocalRDF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="QueryLocalRDF" />
       <module name="SPARQL" />
@@ -61,13 +78,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,6 +94,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.QueryLocalRDF" />
+        <item itemvalue="Application.Movies" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +106,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612969123449</updated>
-      <workItem from="1612969131627" duration="1683000" />
+      <workItem from="1612969131627" duration="3615000" />
+      <workItem from="1614269368387" duration="1421000" />
     </task>
     <task id="LOCAL-00001" summary="Test Query 2_2 OK">
       <created>1612970213304</created>
@@ -95,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612970213307</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ajout Query 2_1 et 2_3">
+      <created>1612970983356</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612970983356</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,10 +139,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Test Query 2_2 OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Query 2_2 OK" />
+    <MESSAGE value="Ajout Query 2_1 et 2_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout Query 2_1 et 2_3" />
   </component>
 </project>

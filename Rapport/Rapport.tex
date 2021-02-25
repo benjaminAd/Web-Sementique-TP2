@@ -157,10 +157,231 @@ LIMIT 100
             \begin{center}
                 \includegraphics{Quest31}
             \end{center}
+            \item \underline{Donner la liste des propriétés employées pour décrire les instances de la classe choisie.}
+            \begin{verbatim}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?inst ?prop
+WHERE {
+?inst rdf:type <http://dbpedia.org/ontology/.....>.
+?inst ?prop <http://dbpedia.org/ontology/......>
+}
+LIMIT 100
+            \end{verbatim}
+            \item \underline{Vérifier si ces propriétés ont des sous-propriétés.}
+            \begin{verbatim}
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ASK
+FROM <http://dbpedia.org/ontology/RacingDriver>
+WHERE {
+?inst rdf:type <http://dbpedia.org/ontology/......>.
+?inst ?prop <http://dbpedia.org/ontology/..........>.
+?subprop rdfs:subPropertyOf ?prop
+}
+            \end{verbatim}
         \end{enumerate}
     \end{justify}
 
 
-    \section{Partie 3}
+    \section{Interrogation d'un flux RSS exporté en RDF:}
+    \begin{justify}
+        \begin{enumerate}
+            \item \underline{Quels sont les titres des articles (rss:item) publiés dans le flux RSS ?}
+            \begin{verbatim}
+String req1 = "PREFIX vCard: "
+                + "PREFIX rss: "
+                + "PREFIX foaf: "
+                + "PREFIX rdf: "
+                + ""
+                + "SELECT ?titre "
+                + "FROM "
+                + " WHERE { "
+                + " ?item rdf:type rss:item ."
+                + " ?item rss:title ?titre"
+                + "} ";
+            \end{verbatim}
+            \item \underline{Quel est le titre (rss:title) du flux (rss:channel) RSS ?}
+            \begin{verbatim}
+String req2 = "PREFIX vCard: "
+                + "PREFIX rss: "
+                + "PREFIX foaf: "
+                + "PREFIX rdf: "
+                + ""
+                + "SELECT ?titre "
+                + "FROM "
+                + " WHERE { "
+                + " ?item rdf:type rss:channel ."
+                + " ?item rss:title ?titre"
+                + "} ";
+            \end{verbatim}
+            \item \underline{Donner les onze premiers articles du flux RSS par ordre chronologique.}
+            \begin{verbatim}
+String req3 = "PREFIX vCard: "
+                + "PREFIX rss: " + "PREFIX foaf: "
+                + "PREFIX rdf:http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+                + ""
+                + "SELECT ?article "
+                + "FROM "
+                + " WHERE { "
+                + " ?article rdf:type rss:item "
+                + "} "
+                + "LIMIT 11" ;
+            \end{verbatim}
+            \item \underline{Donner le deuxième article du flux RSS (ordre chronologique)}
+            \begin{verbatim}
+String req4 = "PREFIX vCard: "
+                + "PREFIX rss: "
+                + "PREFIX foaf: "
+                + "PREFIX rdf:"
+                + "" + "SELECT ?article "
+                + "FROM "
+                + " WHERE { "
+                + " ?article rdf:type rss:item "
+                + "} "
+                + "OFFSET 2"
+                + "LIMIT 1";
+            \end{verbatim}
+            \item \underline{Donner l’avant dernier article du flux RSS (ordre chronologique)}
+            \begin{verbatim}
+String req5 = "PREFIX vCard: "
+                + "PREFIX rss: "
+                + "PREFIX foaf: "
+                + "PREFIX rdf:"
+                + ""
+                + "SELECT ?article "
+                + "FROM "
+                + " WHERE { "
+                + " ?article rdf:type rss:item"
+                + "} "
+                + "OFFSET 51"
+                + "LIMIT 51" ;
+            \end{verbatim}
+            \item \underline{Donner le deuxième ainsi que l’avant dernier article du flux RSS (requête UNION)}
+            \begin{verbatim}
+String req6 = "PREFIX vCard: "
+                + "PREFIX rss: "
+                + "PREFIX foaf: "
+                + "PREFIX rdf:"
+                + ""
+                + "SELECT ?article "
+                + "FROM "
+                + " WHERE { "
+                + "{"
+                + "SELECT ?article "
+                + " WHERE { "
+                + " ?article rdf:type rss:item"
+                + "} "
+                + "OFFSET 1"
+                + "LIMIT 1"
+                + "}"
+                +"UNION"
+                + "{"
+                + "SELECT ?article "
+                + " WHERE { "
+                + " ?article rdf:type rss:item"
+                + "} "
+                + "OFFSET 51"
+                + "LIMIT 51"
+                + "}"
+            \end{verbatim}
+            \item \underline{Donner la liste des couples d’articles publiés à la même date}
+            \begin{verbatim}
+String req7 = "PREFIX vCard: "
+                + "PREFIX rss: "
+                +"PREFIX foaf: "
+                + "PREFIX rdf:"
+                + ""
+                + "SELECT ?item ?titre ?date "
+                + "FROM "
+                + " WHERE { "
+                + " ?item rdf:type rss:item ."
+                + " ?item rss:title ?titre ."
+                + " ?item dc:date ?date"
+                + "} ";
+            \end{verbatim}
+            \item \underline{Quels sont les articles publiés le 2007-04-12 ?}
+            \begin{verbatim}
+String req8 = "PREFIX vCard: "
+                + "PREFIX rss: "
+                + "PREFIX foaf: "
+                + "PREFIX rdf:"
+                + ""
+                + "SELECT ?item ?titre ?date "
+                + "FROM "
+                + " WHERE { "
+                + " ?item rss:title ?titre ."
+                + " ?item dc:date ?date"
+                + "FILTER xsd:dateTime(?pub_date) "
+                +">= \""20070412T00:00+00:00"^^xsd:string &&"
+                + " xsd:dateTime(?pub_date) "
+                +"< \""20070412T00:00+00:00"^^xsd:string"
+                + "} ";
+            \end{verbatim}
+            \item \underline{Donnez la liste des auteurs (sans répétition) des articles dans ce flux RSS ?}
+            \begin{verbatim}
+String req9 = "PREFIX vCard: "
+                + "PREFIX rss: "
+                + "PREFIX foaf: "
+                + "PREFIX rdf:"
+                + ""
+                + "SELECT "
+                +"?item ?titre (distinct ?author) "
+                + "FROM "
+                + " WHERE { "
+                + " ?item rdf:type rss:item ."
+                + " ?item rss:title ?titre ."
+                + " ?item dc:author ?author"
+                + "} ";
+            \end{verbatim}
+        \end{enumerate}
+    \end{justify}
 
+
+    \section{Interrogation du réseau social de l'UE :}
+    \begin{justify}
+        \begin{enumerate}
+            \item \underline{Est il vrai que GpersonalFriend $\subseteq$ GsocialFriend ?}
+            \begin{verbatim}
+PREFIX rdf: <http://www.w3.org/1999/02/22rdfsyntaxns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX ws: <http://www.lirmm.fr/˜ulliana/HMIN234.rdf#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ ASK
+ FROM WHERE {
+                GpersonalFriend ?inc GsocialFriend 
+}
+
+            \end{verbatim}
+            \item \underline{Est il vrai que GsocialFriend $\subseteq$ GpersonalFriend ?}
+            \begin{verbatim}
+PREFIX rdf: <http://www.w3.org/1999/02/22rdfsyntaxns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX ws: <http://www.lirmm.fr/˜ulliana/HMIN234.rdf#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ASK
+ FROM WHERE { 
+GsocialFriend ?inc GpersonalFriend 
+}
+            \end{verbatim}
+            \item \underline{Est il vrai que GpersonalFriend, GsocialFriend $\subseteq$ Gknows ?}
+            \begin{verbatim}
+PREFIX rdf: <http://www.w3.org/1999/02/22rdfsyntaxns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX ws: <http://www.lirmm.fr/˜ulliana/HMIN234.rdf#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ASK
+FROM WHERE {
+ WHERE {
+ GpersonalFriend ?inc Gknows
+}
+UNION
+WHERE {
+ GsocialFriend ?inc Gknows
+}
+}
+
+            \end{verbatim}
+        \end{enumerate}
+    \end{justify}
 \end{document} 

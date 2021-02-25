@@ -1,0 +1,166 @@
+# namespaces
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ws:   <http://www.lirmm.fr/ulliana/HMIN234.rdf#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#>  .
+
+# 14 participants
+ws:s01
+    rdf:type foaf:Person .
+
+ws:s02
+    rdf:type foaf:Person .
+
+ws:s03
+    rdf:type foaf:Person .
+
+ws:s04
+    rdf:type foaf:Person .
+
+ws:s05
+    rdf:type foaf:Person .
+
+ws:s06
+    rdf:type foaf:Person .
+
+ws:s07
+    rdf:type foaf:Person .
+
+ws:s08
+    rdf:type foaf:Person .
+
+ws:s09
+    rdf:type foaf:Person .
+
+ws:s10
+    rdf:type foaf:Person .
+
+ws:s11
+    rdf:type foaf:Person .
+
+ws:s12
+    rdf:type foaf:Person .
+
+ws:s13
+    rdf:type foaf:Person .
+
+ws:s14
+    rdf:type foaf:Person .
+
+ws:s02
+    ws:socialFriend ws:s01 .
+
+ws:s01
+    ws:socialFriend ws:s02 .
+
+ws:s01
+    ws:socialFriend ws:s03 .
+
+ws:s01
+    ws:socialFriend ws:s04 .
+
+ws:s02
+    ws:socialFriend ws:s13 .
+
+ws:s02
+    ws:personalFriend ws:s13 .
+
+ws:s02
+    ws:socialFriend ws:s14 .
+
+ws:s02
+    ws:personalFriend ws:s14 .
+
+ws:s03
+    ws:socialFriend ws:s01 .
+
+ws:s03
+    ws:personalFriend ws:s04 .
+
+ws:s03
+    ws:personalFriend ws:s05 .
+
+ws:s03
+    ws:socialFriend ws:s06 .
+
+ws:s04
+    ws:socialFriend ws:s01 .
+
+ws:s04
+    ws:socialFriend ws:s03 .
+
+ws:s04
+    ws:personalFriend ws:s03 .
+
+ws:s05
+    ws:socialFriend ws:s06 .
+
+ws:s05
+    ws:socialFriend ws:s07 .
+
+ws:s05
+    ws:personalFriend ws:s07 .
+
+ws:s06
+    ws:socialFriend ws:s03 .
+
+ws:s06
+    ws:socialFriend ws:s05 .
+
+ws:s06
+    ws:socialFriend ws:s08 .
+
+ws:s07
+    ws:socialFriend ws:s05 .
+
+ws:s07
+    ws:personalFriend ws:s05 .
+
+ws:s08
+    ws:socialFriend ws:s06 .
+
+ws:s08
+    ws:socialFriend ws:s09 .
+
+ws:s09
+    ws:socialFriend ws:s08 .
+
+ws:s09
+    ws:personalFriend ws:s08 .
+
+ws:s10
+    ws:socialFriend ws:s11 .
+
+ws:s10
+    ws:personalFriend ws:s11 .
+
+ws:s11
+    ws:socialFriend ws:s10 .
+
+ws:s11
+    ws:personalFriend ws:s10 .
+
+ws:s13
+    ws:socialFriend ws:s02 .
+
+ws:s13
+    ws:personalFriend ws:s02 .
+
+ws:s13
+    ws:socialFriend ws:s14 .
+
+ws:s13
+    ws:personalFriend ws:s14 .
+
+ws:s14
+    ws:socialFriend ws:s02 .
+
+ws:s14
+    ws:personalFriend ws:s02 .
+
+ws:s14
+    ws:socialFriend ws:s13 .
+
+ws:s14
+    ws:personalFriend ws:s13 .

@@ -189,13 +189,13 @@ WHERE {
         \begin{enumerate}
             \item \underline{Quels sont les titres des articles (rss:item) publiés dans le flux RSS ?}
             \begin{verbatim}
-String req1 = "PREFIX vCard: "
-                + "PREFIX rss: "
-                + "PREFIX foaf: "
-                + "PREFIX rdf: "
+String req1 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
+                + "PREFIX rss: <http://purl.org/rss/1.0/> "
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+                + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                 + ""
                 + "SELECT ?titre "
-                + "FROM "
+                + "FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
                 + " WHERE { "
                 + " ?item rdf:type rss:item ."
                 + " ?item rss:title ?titre"
@@ -203,13 +203,13 @@ String req1 = "PREFIX vCard: "
             \end{verbatim}
             \item \underline{Quel est le titre (rss:title) du flux (rss:channel) RSS ?}
             \begin{verbatim}
-String req2 = "PREFIX vCard: "
-                + "PREFIX rss: "
-                + "PREFIX foaf: "
-                + "PREFIX rdf: "
+String req2 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
+                + "PREFIX rss: <http://purl.org/rss/1.0/> "
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+                + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                 + ""
                 + "SELECT ?titre "
-                + "FROM "
+                + "FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
                 + " WHERE { "
                 + " ?item rdf:type rss:channel ."
                 + " ?item rss:title ?titre"
@@ -217,12 +217,13 @@ String req2 = "PREFIX vCard: "
             \end{verbatim}
             \item \underline{Donner les onze premiers articles du flux RSS par ordre chronologique.}
             \begin{verbatim}
-String req3 = "PREFIX vCard: "
-                + "PREFIX rss: " + "PREFIX foaf: "
-                + "PREFIX rdf:http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+String req3 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
+                + "PREFIX rss: <http://purl.org/rss/1.0/> "
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+                + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                 + ""
                 + "SELECT ?article "
-                + "FROM "
+                + "FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
                 + " WHERE { "
                 + " ?article rdf:type rss:item "
                 + "} "
@@ -230,12 +231,12 @@ String req3 = "PREFIX vCard: "
             \end{verbatim}
             \item \underline{Donner le deuxième article du flux RSS (ordre chronologique)}
             \begin{verbatim}
-String req4 = "PREFIX vCard: "
-                + "PREFIX rss: "
-                + "PREFIX foaf: "
-                + "PREFIX rdf:"
+String req4 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
+                + "PREFIX rss: <http://purl.org/rss/1.0/> "
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+                + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                 + "" + "SELECT ?article "
-                + "FROM "
+                + "FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
                 + " WHERE { "
                 + " ?article rdf:type rss:item "
                 + "} "
@@ -244,13 +245,13 @@ String req4 = "PREFIX vCard: "
             \end{verbatim}
             \item \underline{Donner l’avant dernier article du flux RSS (ordre chronologique)}
             \begin{verbatim}
-String req5 = "PREFIX vCard: "
-                + "PREFIX rss: "
-                + "PREFIX foaf: "
-                + "PREFIX rdf:"
+String req5 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
+                + "PREFIX rss: <http://purl.org/rss/1.0/> "
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+                + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                 + ""
                 + "SELECT ?article "
-                + "FROM "
+                + "FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
                 + " WHERE { "
                 + " ?article rdf:type rss:item"
                 + "} "
@@ -259,13 +260,13 @@ String req5 = "PREFIX vCard: "
             \end{verbatim}
             \item \underline{Donner le deuxième ainsi que l’avant dernier article du flux RSS (requête UNION)}
             \begin{verbatim}
-String req6 = "PREFIX vCard: "
-                + "PREFIX rss: "
-                + "PREFIX foaf: "
-                + "PREFIX rdf:"
+String req6 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
+                + "PREFIX rss: <http://purl.org/rss/1.0/> "
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+                + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                 + ""
                 + "SELECT ?article "
-                + "FROM "
+                + "FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
                 + " WHERE { "
                 + "{"
                 + "SELECT ?article "
@@ -287,13 +288,13 @@ String req6 = "PREFIX vCard: "
             \end{verbatim}
             \item \underline{Donner la liste des couples d’articles publiés à la même date}
             \begin{verbatim}
-String req7 = "PREFIX vCard: "
-                + "PREFIX rss: "
-                +"PREFIX foaf: "
-                + "PREFIX rdf:"
+String req7 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
+                + "PREFIX rss: <http://purl.org/rss/1.0/> "
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+                + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                 + ""
                 + "SELECT ?item ?titre ?date "
-                + "FROM "
+                + "FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
                 + " WHERE { "
                 + " ?item rdf:type rss:item ."
                 + " ?item rss:title ?titre ."
@@ -302,13 +303,13 @@ String req7 = "PREFIX vCard: "
             \end{verbatim}
             \item \underline{Quels sont les articles publiés le 2007-04-12 ?}
             \begin{verbatim}
-String req8 = "PREFIX vCard: "
-                + "PREFIX rss: "
-                + "PREFIX foaf: "
-                + "PREFIX rdf:"
+String req8 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
+                + "PREFIX rss: <http://purl.org/rss/1.0/> "
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+                + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                 + ""
                 + "SELECT ?item ?titre ?date "
-                + "FROM "
+                + "FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
                 + " WHERE { "
                 + " ?item rss:title ?titre ."
                 + " ?item dc:date ?date"
@@ -320,20 +321,23 @@ String req8 = "PREFIX vCard: "
             \end{verbatim}
             \item \underline{Donnez la liste des auteurs (sans répétition) des articles dans ce flux RSS ?}
             \begin{verbatim}
-String req9 = "PREFIX vCard: "
-                + "PREFIX rss: "
-                + "PREFIX foaf: "
-                + "PREFIX rdf:"
+String req9 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
+                + "PREFIX rss: <http://purl.org/rss/1.0/> "
+                + "PREFIX foaf: <http://xmlns.com/foaf/0.1/> "
+                + "PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
                 + ""
                 + "SELECT "
-                +"?item ?titre (distinct ?author) "
-                + "FROM "
+                + "?item ?titre (distinct ?author) "
+                + "FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
                 + " WHERE { "
                 + " ?item rdf:type rss:item ."
                 + " ?item rss:title ?titre ."
                 + " ?item dc:author ?author"
                 + "} ";
             \end{verbatim}
+            \item Dites si le flux RSS utilise la propri\'et\'e “title” d\'efinie par l\rq{espace} de nommage Dublin Core (“dc:”)
+
+            \item
         \end{enumerate}
     \end{justify}
 

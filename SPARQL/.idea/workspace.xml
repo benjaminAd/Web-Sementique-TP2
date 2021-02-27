@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d6d9b28-7823-4546-b424-f71a1869b84b" name="Default Changelist" comment="Ajout Query 2_1 et 2_3">
-      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/Rapport.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rapport/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rapport/auxil/Rapport.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rapport/auxil/Rapport.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Rapport/auxil/Rapport.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/SPARQL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Text.ttl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Movies.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Text.ttl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Movies.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rapport/Rapport.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/Rapport.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rapport/auxil/Rapport.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/auxil/Rapport.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rapport/out/Rapport.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/out/Rapport.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rapport/out/Rapport.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/out/Rapport.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QueryLocalRDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueryLocalRDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QueryLocalRDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QueryLocalRDF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QueryRemoteRDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueryRemoteRDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/QueryRemoteRDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QueryRemoteRDF.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +54,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../1ere annee/Semestre 2/TER/entrainement/AccessDataLast" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
-  <component name="RunManager" selected="Application.QueryLocalRDF">
+  <component name="RunManager" selected="Application.QueryRemoteRDF">
     <configuration name="Movies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Movies" />
       <module name="SPARQL" />
@@ -73,6 +64,13 @@
     </configuration>
     <configuration name="QueryLocalRDF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="QueryLocalRDF" />
+      <module name="SPARQL" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryRemoteRDF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QueryRemoteRDF" />
       <module name="SPARQL" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QueryRemoteRDF" />
         <item itemvalue="Application.QueryLocalRDF" />
         <item itemvalue="Application.Movies" />
       </list>
@@ -108,6 +107,8 @@
       <updated>1612969123449</updated>
       <workItem from="1612969131627" duration="3615000" />
       <workItem from="1614269368387" duration="1421000" />
+      <workItem from="1614355193404" duration="3312000" />
+      <workItem from="1614430030890" duration="3345000" />
     </task>
     <task id="LOCAL-00001" summary="Test Query 2_2 OK">
       <created>1612970213304</created>

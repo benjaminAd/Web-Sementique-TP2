@@ -9,9 +9,6 @@
       <change beforePath="$PROJECT_DIR$/../Rapport/auxil/Rapport.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/auxil/Rapport.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Rapport/out/Rapport.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/out/Rapport.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Rapport/out/Rapport.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/out/Rapport.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QueryRemoteRDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueryRemoteRDF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QueryRemoteRDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QueryRemoteRDF.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +92,7 @@
       <workItem from="1614269368387" duration="1421000" />
       <workItem from="1614355193404" duration="3312000" />
       <workItem from="1614430030890" duration="7421000" />
+      <workItem from="1614540956404" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="Test Query 2_2 OK">
       <created>1612970213304</created>
@@ -117,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614454484073</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="req 10 11 12">
+      <created>1614541015771</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614541015771</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +145,7 @@
     <MESSAGE value="Test Query 2_2 OK" />
     <MESSAGE value="Ajout Query 2_1 et 2_3" />
     <MESSAGE value="Req 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Req 10" />
+    <MESSAGE value="req 10 11 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="req 10 11 12" />
   </component>
 </project>

@@ -336,9 +336,39 @@ String req9 = "PREFIX vCard: <http://www.w3.org/2001/vcard-rdf/3.0#> "
                 + "} ";
             \end{verbatim}
             \item  \underline{Dites si le flux RSS utilise la propri\'et\'e “title” d\'efinie par l\rq{espace} de nommage}\\ \underline{ Dublin Core (“dc:”)} \\
-
-
-            \item
+            \begin{verbatim}
+String req10 = "PREFIX dc:<http://purl.org/dc/elements/1.1/>"
+                +"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+                +" "
+                +"SELECT ?f "
+                +"FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
+                + " WHERE { "
+                +"?f dc:title ?o"
+                +" }";
+            \end{verbatim}
+            \item \underline{Dites si le flux RSS utilise la propriété “subject” définie par l’espace de nommage} \\ \underline{Dublin Core.}
+            \begin{verbatim}
+String req11 = "PREFIX dc:<http://purl.org/dc/elements/1.1/>"
+                +"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+                +" "
+                +"SELECT DISTINCT ?s "
+                +"FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
+                + " WHERE { "
+                +"?s dc:subject ?o "
+                +" }"
+                +"LIMIT 1";
+            \end{verbatim}
+            \item \underline{Donnez la liste des dates de publication de tous les articles du flux RSS.}
+            \begin{verbatim}
+String req12 = "PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>"
+                + " PREFIX dc: <http://purl.org/dc/elements/1.1/>"
+                + " PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+                + " PREFIX rss: <http://purl.org/rss/1.0/>"
+                + "PREFIX swq: <http://www.w3.org/2001/sw/SW-FAQ#>"
+                + "SELECT ?o"
+                + " FROM <http://www.w3.org/2001/sw/SW-FAQ-feed.rdf>"
+                + "WHERE { ?s dc:date ?o}";
+            \end{verbatim}
         \end{enumerate}
     \end{justify}
 

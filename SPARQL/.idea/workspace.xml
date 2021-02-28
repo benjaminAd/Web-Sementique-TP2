@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d6d9b28-7823-4546-b424-f71a1869b84b" name="Default Changelist" comment="Ajout Query 2_1 et 2_3">
+    <list default="true" id="6d6d9b28-7823-4546-b424-f71a1869b84b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Rapport/Rapport.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/Rapport.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Rapport/auxil/Rapport.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/auxil/Rapport.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Rapport/out/Rapport.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/out/Rapport.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Rapport/out/Rapport.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../Rapport/out/Rapport.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/QueryRemoteRDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueryRemoteRDF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/QueryRemoteRDF.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QueryRemoteRDF.class" afterDir="false" />
     </list>
@@ -76,19 +75,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.QueryRemoteRDF" />
@@ -108,7 +94,7 @@
       <workItem from="1612969131627" duration="3615000" />
       <workItem from="1614269368387" duration="1421000" />
       <workItem from="1614355193404" duration="3312000" />
-      <workItem from="1614430030890" duration="3345000" />
+      <workItem from="1614430030890" duration="7421000" />
     </task>
     <task id="LOCAL-00001" summary="Test Query 2_2 OK">
       <created>1612970213304</created>
@@ -124,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612970983356</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Req 10">
+      <created>1614454484073</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614454484073</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +139,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Test Query 2_2 OK" />
     <MESSAGE value="Ajout Query 2_1 et 2_3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout Query 2_1 et 2_3" />
+    <MESSAGE value="Req 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Req 10" />
   </component>
 </project>
